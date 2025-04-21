@@ -32,7 +32,7 @@ export default function SkillsModal({
       <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative">
         <button
           onClick={onClose}
-          className="absolute top-2 right-4 text-[#86C232] text-2xl hover:text-white"
+          className="absolute top-2 right-2 sm:right-4 text-[#86C232] text-2xl hover:text-white"
         >
           ×
         </button>
