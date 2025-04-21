@@ -18,7 +18,7 @@ export default function WorkExperienceModal({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-4xl min-h-[250px] p-8 relative m-4">
+      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-4xl min-h-[250px] p-8 relative m-4 overflow-hidden">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 sm:right-4 text-[#86C232] text-2xl hover:text-white"
