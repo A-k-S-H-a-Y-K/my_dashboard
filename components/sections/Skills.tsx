@@ -28,7 +28,7 @@ export default function SkillsModal({
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 overflow-y-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
       <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative sm:top-4 top-0 z-20">
         <button
           onClick={onClose}
@@ -40,7 +40,7 @@ export default function SkillsModal({
         {/* Tech Skills */}
         <div className="mb-6">
           <h4 className={`text-2xl mb-4 ${vt323.className}`}>{'> '}Tech Skills</h4>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 text-center">
+          <div className="flex flex-wrap justify-center gap-6 text-center">
             {[ 
               { icon: <SiC className="text-white" />, name: 'C' },
               { icon: <FaJava className="text-white" />, name: 'Java' },
@@ -61,7 +61,7 @@ export default function SkillsModal({
               { icon: <div className="text-lg font-bold text-white">AZURE</div>, name: 'AZURE' },
               { icon: <div className="text-lg font-bold text-white">OS</div>, name: 'OS' },
             ].map(({ icon, name }) => (
-              <div key={name} className="flex flex-col items-center gap-2">
+              <div key={name} className="flex flex-col items-center gap-2 max-w-[100px]">
                 <div className="text-3xl">{icon}</div>
                 <div className="text-sm">{name}</div>
               </div>
@@ -72,7 +72,7 @@ export default function SkillsModal({
         {/* Soft Skills */}
         <div>
           <h4 className={`text-2xl mb-4 ${vt323.className}`}>{'> '}Soft Skills</h4>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             {[ 
               'Hardworking', 
               'Creative', 
