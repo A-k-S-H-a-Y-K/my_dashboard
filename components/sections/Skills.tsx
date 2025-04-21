@@ -29,7 +29,7 @@ export default function SkillsModal({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative">
+      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative m-4 sm:m-6">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 sm:right-4 text-[#86C232] text-2xl hover:text-white"
@@ -41,7 +41,7 @@ export default function SkillsModal({
         <div className="mb-6">
           <h4 className={`text-2xl mb-4 ${vt323.className}`}>{'> '}Tech Skills</h4>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 text-center">
-            {[
+            {[ 
               { icon: <SiC className="text-white" />, name: 'C' },
               { icon: <FaJava className="text-white" />, name: 'Java' },
               { icon: <SiTypescript className="text-white" />, name: 'TypeScript' },
@@ -73,13 +73,13 @@ export default function SkillsModal({
         <div>
           <h4 className={`text-2xl mb-4 ${vt323.className}`}>{'> '}Soft Skills</h4>
           <div className="flex flex-wrap gap-4">
-            {[
-              'Hardworking',
-              'Creative',
-              'Analytical Thinking',
-              'Communication',
-              'Problem-Solving',
-              'Time management',
+            {[ 
+              'Hardworking', 
+              'Creative', 
+              'Analytical Thinking', 
+              'Communication', 
+              'Problem-Solving', 
+              'Time management', 
               'Curious',
             ].map((skill) => (
               <div key={skill} className="badge badge-outline text-black bg-[#86C232] text-sm p-4">
