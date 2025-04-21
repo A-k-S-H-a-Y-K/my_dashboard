@@ -28,11 +28,11 @@ export default function SkillsModal({
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative m-4 sm:m-6">
+    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 overflow-y-auto">
+      <div className="bg-[#1a1a1a] text-[#86C232] border border-[#86C232] rounded-xl shadow-2xl w-full max-w-xl min-h-[350px] p-8 relative m-4 sm:m-6 overflow-hidden">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 sm:right-4 text-[#86C232] text-2xl hover:text-white"
+          className="absolute top-2 right-2 sm:right-4 text-[#86C232] text-2xl hover:text-white z-10"
         >
           ×
         </button>
